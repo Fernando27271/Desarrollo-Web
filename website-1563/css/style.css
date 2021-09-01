@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+/* Así se importa una fuente de Google */
+body{
+    background-color: #dddddd;/* Color de fondo */
+    font-family: 'Poppins', sans-serif;/* Tipo de letra */
+}
+h1{
+    font-weight: 900;/* Estilo o grosor de la fuente */
+    font-size: 36px;/* Tamaño de la fuente */
+    letter-spacing: -2px;/* Espaciado entre letra y letra */
+}
+h2{
+    font-weight: 200;
+    font-size: 32px;
+    letter-spacing: -2px;
+    text-transform: lowercase;/* Muestra el texto en minúscula */
+}
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;/* Muestra el texto en mayúscula */
+}
