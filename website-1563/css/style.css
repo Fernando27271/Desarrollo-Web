@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
-/* Así se importa una fuente de Google */
-body{/*Asi se define una regla de estilos para una etiqueta (en esta caso body) */
-    margin: 0;/* Así se elimina el margen por defecto de body */
-    background-color: #dddddd;/* Color de fondo */
-    font-family: Poppins, Helvetica, Tahoma, Arial, sans-serif;/* Tipo de letra */
+/* Así se importa una fuente de Google  */
+body{/* Así se define una regla de estilos para una etiqueta (en este caso body) */
+    margin:0;/* Así se elimina el margen por defecto de body */
+    background-color: #dddddd; /* Color de fondo */
+    font-family: Poppins, Helvetica, Tahoma, Arial, sans-serif; /* Tipo de letra */
 }
 h1{
     font-weight: 900;/* Estilo o grosor de la fuente */
-    font-size: 36px;/* Tamaño de la fuente */
+    font-size: 36px;/* Tamaño de la fuente*/
     letter-spacing: -2px;/* Espaciado entre letra y letra */
     margin: 0;
 }
@@ -17,7 +17,7 @@ h2{
     letter-spacing: -2px;
     text-transform: lowercase;/* Muestra el texto en minúscula */
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 h3{
     font-weight: 700;
@@ -25,7 +25,7 @@ h3{
     text-transform: uppercase;/* Muestra el texto en mayúscula */
 }
 
-#main-header{/* Así se define una regla para aplicar formarto a un objeto 
+#main-header{/* Así se define una regla para aplicar formato a un objeto
     por su id (empieza con #) */
     background-color: #ffffff;
 }
@@ -42,10 +42,10 @@ h3{
 #eventos{
     background-color: #cccccc;
 }
-.padded{/* Así se define una regla para aplicar formarto a una clase 
+.padded{/* Así se define una regla para aplicar formato a una clase
     por su id (empieza con .) */
-    padding-top: 90px;/* Dsitancia del borde al contenido (margen interno) */
-    padding-bottom: 90px;/* top arriba, bottom abajo */
+    padding-top: 90px;/* Distancia del borde al contenido (margen interno) */
+    padding-bottom: 90px;/* top arriba, bottom abajo   */
 }
 .container{
     max-width: 1000px;/* Ancho máximo */
