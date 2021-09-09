@@ -4,6 +4,12 @@ body{/* Así se define una regla de estilos para una etiqueta (en este caso body
     margin:0;/* Así se elimina el margen por defecto de body */
     background-color: #dddddd; /* Color de fondo */
     font-family: Poppins, Helvetica, Tahoma, Arial, sans-serif; /* Tipo de letra */
+    font-size: 15px;
+    line-height: 25px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 h1{
     font-weight: 900;/* Estilo o grosor de la fuente */
@@ -18,11 +24,13 @@ h2{
     text-transform: lowercase;/* Muestra el texto en minúscula */
     margin-top: 0px;
     margin-bottom: 10px;
+    line-height: 34px;/* Alto de linea */
 }
 h3{
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;/* Muestra el texto en mayúscula */
+    line-height: 22px;
 }
 
 #main-header{/* Así se define una regla para aplicar formato a un objeto
@@ -42,6 +50,10 @@ h3{
 #eventos{
     background-color: #cccccc;
 }
+#valores{
+    background-color: #000000;
+    color: #ffffff;
+}
 .padded{/* Así se define una regla para aplicar formato a una clase
     por su id (empieza con .) */
     padding-top: 90px;/* Distancia del borde al contenido (margen interno) */
@@ -56,8 +68,14 @@ h3{
 }
 .row{
     display: flex;/* Hace que los objetos que contiene, por defecto estén uno al costado del otro */
+    margin-left: -15px;/* Truco para eliminar el padding adicional y esté alineado */
+    margin-right: -15px;
 }
 .col{
     padding-left: 15px;
     padding-right: 15px;
+
+    /* Para que las columnas tengan el mismo ancho */
+    flex-basis: 0;/* Tengan un valor inicial minimo */
+    flex-grow: 1;/* Crezcan en el mismo ancho */
 }
