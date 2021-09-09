@@ -7,6 +7,9 @@ body{/* Así se define una regla de estilos para una etiqueta (en este caso body
     font-size: 15px;
     line-height: 25px;
 }
+img{
+    display: block;/* para eliminar el espacio por defecto que tienen las imagenes en la parte inferior */
+}
 p {
     margin-top: 0;
     margin-bottom: 25px;
@@ -36,6 +39,10 @@ h3{
 #main-header{/* Así se define una regla para aplicar formato a un objeto
     por su id (empieza con #) */
     background-color: #ffffff;
+}
+#main-header p{/* El espacio significa dentro de... */
+    margin-bottom: 0;
+
 }
 #historia{
     background-color: #333333;
@@ -78,4 +85,15 @@ h3{
     /* Para que las columnas tengan el mismo ancho */
     flex-basis: 0;/* Tengan un valor inicial minimo */
     flex-grow: 1;/* Crezcan en el mismo ancho */
+
+    box-sizing: border-box;/* para que el padding no incremente el ancho del objeto */
+}
+.col-50{
+    /* Para que la caja ocupe el 50% del objeto que lo contiene (su contenedor) */  
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.img-fluid{
+    width: 100%;/* Asi el ancho de la imagen es el ancho de su contenedor */
+    height: auto;/* El alto será proporcional al ancho */
 }
