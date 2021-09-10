@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+/* Así se importa una fuente de Google  */
+body{/* Así se define una regla de estilos para una etiqueta (en este caso body) */
+    margin:0;/* Así se elimina el margen por defecto de body */
+    background-color: #dddddd; /* Color de fondo */
+    font-family: Poppins, Helvetica, Tahoma, Arial, sans-serif; /* Tipo de letra */
+    font-size: 15px;
+    line-height: 25px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+h1{
+    font-weight: 900;/* Estilo o grosor de la fuente */
+    font-size: 36px;/* Tamaño de la fuente*/
+    letter-spacing: -2px;/* Espaciado entre letra y letra */
+    margin: 0;
+}
+h2{
+    font-weight: 200;
+    font-size: 32px;
+    letter-spacing: -2px;
+    text-transform: lowercase;/* Muestra el texto en minúscula */
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 34px; /* Alto de línea */
+}
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;/* Muestra el texto en mayúscula */
+    line-height: 22px;
+}
+
+#main-header{/* Así se define una regla para aplicar formato a un objeto
+    por su id (empieza con #) */
+    background-color: #ffffff;
+}
+#historia{
+    background-color: #333333;
+    color: #ffffff;/* Color de texto */
+}
+#mensaje{
+    background-color: #dddddd;
+}
+#noticias{
+    background-color: #ffffff;
+}
+#eventos{
+    background-color: #cccccc;
+}
+.padded{/* Así se define una regla para aplicar formato a una clase
+    por su id (empieza con .) */
+    padding-top: 90px;/* Distancia del borde al contenido (margen interno) */
+    padding-bottom: 90px;/* top arriba, bottom abajo   */
+}
+.container{
+    max-width: 1000px;/* Ancho máximo */
+    margin-left: auto;
+    margin-right: auto;/* con ambos márgenes en auto son iguales y se ve centrado */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row{
+    display: flex;/* HAce que los objetos que contiene, por defecto estén uno al costado del otro */
+    margin-left: -15px;/* Truco para que eliminar el padding adicional y esté alineado */
+    margin-right: -15px;
+}
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+}
