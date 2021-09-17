@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+/* Así se importa una fuente de Google  */
+
+:root{
+    --color1: #1AD6AB;
+    --color2: #A1E60E;
+    --color3: #FAA228;
+    --color4: #E3197B;
+    --color5: #5487FF;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+    --gris-oscuro: #444444;
+    --gris-claro: #dddddd;
+}
+
+body{/* Así se define una regla de estilos para una etiqueta (en este caso body) */
+    margin:0;/* Así se elimina el margen por defecto de body */
+    background-color: var(--gris-claro); /* Color de fondo */
+    font-family: Poppins, Helvetica, Tahoma, Arial, sans-serif; /* Tipo de letra */
+    font-size: 15px;
+    line-height: 25px;
+}
+img{
+    display: block;/* para eliminar el espacio por defecto que tienen las imágenes
+    en la parte inferior */
+}
+p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+h1{
+    font-weight: 900;/* Estilo o grosor de la fuente */
+    font-size: 36px;/* Tamaño de la fuente*/
+    letter-spacing: -2px;/* Espaciado entre letra y letra */
+    margin: 0;
+}
+h2{
+    font-weight: 200;
+    font-size: 32px;
+    letter-spacing: -2px;
+    text-transform: lowercase;/* Muestra el texto en minúscula */
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 34px; /* Alto de línea */
+}
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;/* Muestra el texto en mayúscula */
+    line-height: 22px;
+}
+
+#main-header{/* Así se define una regla para aplicar formato a un objeto
+    por su id (empieza con #) */
+    background-color: var(--color1);
+}
+#main-header p{/* El espacio significa dentro de... */
+    margin-bottom: 0;
+}
+#historia{
+    background-color: var(--color3);
+    color: var(--color-blanco);/* Color de texto */
+}
+#conferencia{
+    background-color: var(--color4);
+    color: var(--color-blanco);
+}
+#mensaje{
+    background-color: var(--color-negro);
+    color: var(--gris-claro);
+}
+#concierto{
+    background-image: url('../images/concierto.jpg');
+    background-size: cover;
+    /*background-position: center;*/
+    background-position: 0 40%;/* horizontal vertical  */
+    background-attachment: fixed;
+}
+#concierto p{
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 200;
+    letter-spacing: -2px;
+    text-align: right;
+    color: var(--color-blanco);
+}
+#noticias{
+    background-color: var(--color-blanco);
+}
+#eventos{
+    background-color: var(--color2);
+}
+#valores{
+    background-color: var(--color5);
+    color: #ffffff;
+}
+#main-footer{
+    background-color: var(--gris-oscuro);
+    color: var(--gris-claro);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.padded{/* Así se define una regla para aplicar formato a una clase
+    por su id (empieza con .) */
+    padding-top: 90px;/* Distancia del borde al contenido (margen interno) */
+    padding-bottom: 90px;/* top arriba, bottom abajo   */
+}
+.container{
+    max-width: 1000px;/* Ancho máximo */
+    margin-left: auto;
+    margin-right: auto;/* con ambos márgenes en auto son iguales y se ve centrado */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row{
+    display: flex;/* HAce que los objetos que contiene, por defecto estén uno al costado del otro */
+    margin-left: -15px;/* Truco para que eliminar el padding adicional y esté alineado */
+    margin-right: -15px;
+}
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* Para que las columnas tengan el mismo ancho */
+    flex-basis: 0; /* Tengan un valor inicial mínimo */
+    flex-grow: 1; /* Crazcan en el mismo ancho*/
+
+    box-sizing: border-box; /* para que el padding no incremente el ancho del objeto */
+}
+.col-50{
+    /* Para que la caja ocupe el 50% del objeto que lo contiene (su contenedor) */
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-66{
+    /* Para que la caja ocupe el 50% del objeto que lo contiene (su contenedor) */
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+.img-fluid{
+    width: 100%;/* Asi el ancho de la imagen es el ancho de su contenedor */
+    height: auto; /* El alto será proporcional al ancho */
+}
+.alineacion-vertical-centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
