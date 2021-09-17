@@ -20,9 +20,9 @@ body{/* Así se define una regla de estilos para una etiqueta (en este caso body
     font-size: 15px;
     line-height: 25px;
 }
-
 img{
-    display: block;/* para eliminar el espacio por defecto que tienen las imagenes en la parte inferior */
+    display: block;/* para eliminar el espacio por defecto que tienen las imagenes 
+    en la parte inferior */
 }
 p {
     margin-top: 0;
