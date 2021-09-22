@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --color1: #dd0301;
+    --color2: #383733;
+    --color3: #D1BC87;
+    --color4: #309f52;
+    --color5: #D30017;
+    --color-6: #818181;
+    --color-7: #ffffff;
+    --color-8: #777777;
+    --color-9: #0c0901;
+    --color-10: #e2e9ed;
+    --color-11: #2A220C;
+    --color-12: #c02530;
+    --color-13: #484745;
+}
+
+body{
+    margin: 0;
+    background-color: var(--color-7);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    text-align: center;
+}
+iframe{
+    display: block;
+}
+figure{
+    margin: 0;
+}
+img{
+    display: block;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+p.texts {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: var(--color-8);
+    margin-bottom: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: left;
+}
+p.texts strong {
+    color: var(--color1);
+    font-weight: 800;
+}
+
+h2.section-title{
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 28px;
+    color: var(--color2);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 400;
+    margin-top: 0;
+}
+h2.section-title:before, h2.section-title:after {
+    content: url("../images/lines-effect.png");
+    margin: 14px;
+    color: var(--color3);
+    vertical-align: text-bottom;
+}
+h2.headings {
+    font-family: "Yellowtail", serif;
+    font-size: 58px;
+    color: var(--color4);
+    margin-bottom: 30px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 100;
+    margin-top: 0;
+}
+h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color4);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 33px;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 3px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.692);
+    transition: 0.2s all ease-in-out;
+    z-index: 1;
+}
+#navbar ul{
+    float: right;
+    margin: 0;
+    display: flex;
+}
+#navbar ul li a{
+    line-height: 80px;
+    color: var(--color-7);
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#navbar ul li a:hover{
+    color: var(--color5);
+}
+#navbar.cus-nav{
+    background-color: var(--color-7);
+    z-index: 999;
+    transition: 0.2s all ease-in-out;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 11%);
+}
+#navbar.cus-nav a{
+    color: var(--color-6);
+    transition: 0.2s all ease-in-out;
+}
+#navbar.cus-nav a:hover{
+    color: var(--color5);
+    transition: 0.2s all ease-in-out;
+}
+#logo{
+    padding: 22px 20px;
+    
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color5);
+    font-family: 'Great Vibes', cursive;
+}
+#main-banner{
+    position: relative;
+}
+#logo-banner{
+    display: block;
+    width: 322px;
+    height: 275px;
+    background: url("../images/logo-banner.png");
+}
+#slide-separator{
+    display: block;
+    width: 148px;
+    height: 22px;
+    background: url("../images/slide-separator.png");
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+#title-banner{
+    font-family: 'Oswald', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    color: var(--color-7);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+#about-us{
+    padding-bottom: 140px;
+}
+#horario{
+    background-image: url("../images/zone.png");
+    background-position: 0 60%;
+    position: relative;
+    background-color: #00000070;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+}
+#horario h2 {
+    color: var(--color-7);
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 24px;
+    line-height: 110px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+#horario .dias{
+    font-family: 'Lobster Two', cursive;
+    font-size: 43px;
+    line-height: 48px;
+    margin-top: -20px;
+    color: var(--color5);
+    margin-bottom: 25px;
+    padding: 0;
+}
+#horario .horas{
+    font-family: "Oswald", sans-serif;
+    color: var(--color-7);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 0px;
+    padding: 0;
+}
+#time-table{
+    margin-left: 340px;
+    margin-right: 340px;
+    padding-bottom: 18px;
+}
+#menu{
+    margin-top: 30px;
+    padding-top: 0px;
+    background-image: url("../images/menu-left.jpg"), url("../images/menu-right.jpg");
+    background-position: top left, center right;
+    background-repeat: no-repeat;
+    min-height: 950px;
+}
+#menu ul li{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--color-9);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+#menu-logo{
+    padding-top: 80px;
+}
+#boton-menu{
+    display: block;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color4);
+    border: 2px solid var(--color4);
+    padding: 20px 10px;
+    margin-top: 68px;
+    margin-bottom: 23px;
+    transition: 0.5s all ease;
+    width: 260px;
+}
+#boton-menu:hover{
+    background: var(--color4);
+    color: var(--color-7);
+}
+#testimonios{
+    background-image: url("../images/zone1.png");
+    background-position: 0 60%;
+    background-color: #00000070;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 150px;
+}
+#testimonios h2{
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    color: var(--color1);
+    text-transform: uppercase;
+}
+#testimonios p{
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    font-weight: 400;
+    color: var(--color-10);
+    font-size: 22px;
+    line-height: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#testimonios p strong{
+    color: var(--color1);
+    font-weight: 800;
+    font-size: 38px;
+}
+#testimonios span{
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--color1);
+    float: left;
+}
+#testimonios-img{
+    display: block;
+    width: 130px;
+    height: 130px;
+    background: url("../images/testimonios-logo.png");
+    margin: 0 auto;
+    content: " ";
+    transition: all 0.5s ease;
+    margin-top: 20px;
+}
+#galeria{
+    margin-bottom: 80px;
+}
+#main-footer{
+    background-color: var(--color-11);
+    color: var(--color-7);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+.covertor{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007e;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    max-width: 1220px;
+    padding-top: 0px;
+    margin: 0px auto;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+.section{
+    margin-bottom: -140px;
+    padding-top: 66px;
+    background: var(--color-7);
+    overflow: hidden;
+}
+.section-subtitle{
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: var(--color-8);
+    margin-bottom: 60px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.padded{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.row{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row-galeria{
+    display: flex; 
+    flex-wrap: wrap;
+}
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+.col-50{
+    
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-66{
+    
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+.col-figura {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 0;
+}
+
+.col-figura img{
+    transition: .4s all ease-in-out;
+    margin-bottom: -4px;
+}
+
+.col-figura img:hover{
+    transform: scale(1.2,1.2);
+}
+.horario-atencion {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+.horario-decorator{
+    display: inline-block;
+    width: 200px;
+    height: 110px;
+    background: url("../images/horario-decorator.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: " ";
+}
+.horario-decorator2{
+    display: inline-block;
+    width: 200px;
+    height: 110px;
+    background: url("../images/horario-decorator2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: " ";
+}
+.centrado{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+.detalle-plato{
+    display: block;
+    text-transform: none;
+    color: var(--color-13);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+}
+.precio{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: var(--color-12);
+    float: right;
+    font-weight: 500;
+    text-align: left;
+    line-height: 16px;
+}
