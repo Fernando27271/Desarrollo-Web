@@ -327,6 +327,15 @@ h3{
     padding-bottom: 40px;
     text-align: left;
 }
+#ir-arriba{
+    background-color: #818181b0;
+    color: var(--color-7);
+    padding: 20px 23px;
+    border-radius: 50%;
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+}
 
 .img-fluid{
     width: 100%;
