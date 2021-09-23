@@ -317,8 +317,8 @@ h3{
     transition: all 0.5s ease;
     margin-top: 20px;
 }
-#galeria{
-    margin-bottom: 80px;
+#galeria .container{
+    margin-bottom: 230px;
 }
 #main-footer{
     background-color: var(--color-11);
