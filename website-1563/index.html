@@ -9,10 +9,34 @@
     <!-- Con link se vincula la página html a la hoja de estilos -->
 </head>
 <body>
+
+    <div id="top-nav">
+        <div class="container">
+            <ul class="menu menu-top">
+                <li><a href="#">Oficinas</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Asociados</a></li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+        </div><!-- container -->
+    </div><!-- top-nav -->
+
+
     <div id="main-header">
         <div class="container">
-            <h1>Ideas Digitales</h1>
-            <p>Novedades y Noticias de ciencica y tecnología</p>
+            <div class="row">
+                <div id="logo">
+                    <h1>Ideas Digitales</h1>
+                    <p>Novedades y Noticias de ciencica y tecnología</p>
+                </div>
+                <ul class="menu menu-main">
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Colaboradores</a></li>
+                </ul>
+            </div><!-- row -->
         </div><!-- container -->
     </div><!-- main-header -->
 
@@ -23,7 +47,7 @@
     <div id="historia" class="padded">
         <div class="container">
             <h2>Historia</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quo autem libero commodi recusandae natus fugiat tenetur dignissimos, porro est! Quos, porro, maxime explicabo nobis numquam vitae suscipit obcaecati eum velit voluptate culpa iure voluptatem odit beatae. Delectus, placeat. Expedita fugiat dolores velit facere! Magnam blanditiis saepe sequi fuga neque, quisquam optio eaque molestias mollitia ab adipisci nisi quis, omnis quo est repudiandae. Commodi dolores pariatur ex vitae eum et itaque vel debitis aspernatur explicabo eos esse delectus molestias eius qui corrupti voluptatibus consequuntur quisquam ab maiores recusandae, eveniet animi. Quidem voluptatum maiores quod, necessitatibus expedita ipsum maxime minus saepe ducimus accusamus molestiae nostrum qui nemo, sed voluptatibus quas itaque similique beatae unde quibusdam distinctio. Et debitis eius atque doloremque.</p>
+            <p>Lorem, ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Nobis quo autem libero commodi recusandae natus fugiat tenetur dignissimos, porro est! Quos, porro, maxime explicabo nobis numquam vitae suscipit obcaecati eum velit voluptate culpa iure voluptatem odit beatae. Delectus, placeat. Expedita fugiat dolores velit facere! Magnam blanditiis saepe sequi fuga neque, quisquam optio eaque molestias mollitia ab adipisci nisi quis, omnis quo est repudiandae. Commodi dolores pariatur ex vitae eum et itaque vel debitis aspernatur explicabo eos esse delectus molestias eius qui corrupti voluptatibus consequuntur quisquam ab maiores recusandae, eveniet animi. Quidem voluptatum maiores quod, necessitatibus expedita ipsum maxime minus saepe ducimus accusamus molestiae nostrum qui nemo, sed voluptatibus quas itaque similique beatae unde quibusdam distinctio. Et debitis eius atque doloremque.</p>
         </div><!-- container -->
     </div><!-- historia -->
 
@@ -34,8 +58,8 @@
                     <img src="images/conferencia.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col alineacion-vertical-centrado">
-                    <h2>conferencia</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum animi omnis quis totam voluptatum error quia! Nemo ab veniam quidem repellat. Vitae omnis sunt ducimus quos mollitia esse porro eius accusamus incidunt!</p>
+                    <h2>Conferencia</h2>
+                    <p>Lorem ipsum dolor <a href="#">sit amet consectetur</a> adipisicing elit. Illum animi omnis quis totam voluptatum error quia! Nemo ab veniam quidem repellat. Vitae omnis sunt ducimus quos mollitia esse porro eius accusamus incidunt!</p>
                 </div>
             </div>
         </div><!-- container -->
@@ -50,8 +74,8 @@
 
     <div id="concierto" class="padded">
         <div class="container">
-            <p>Gran concierto de Rock<br>Lima Fest 2021 <br>12 bandas en escena<br> 
-            2 escenarios en simultáneo<br>7 y 8 de Diciembre<br>
+            <p>Gran concierto de <span class="texto-importante">Rock</span><br>Lima Fest 2021 <br>12 bandas en escena
+            <br><span class="texto-importante">2 escenarios</span> en simultáneo<br>7 y 8 de Diciembre<br>
             en el Estadio Nacional<br>
             Vive la mejor experiencia </p>
         </div><!-- container -->
@@ -64,7 +88,7 @@
                 <div class="col">
                     <img src="images/noticia1.jpg" alt="" class="img-fluid">
                     <h3>Cómo saber si tu celular ha sido hackeado y qué puedes hacer para evitarlo</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolorem officiis sapiente veritatis exercitationem dignissimos explicabo. Reiciendis odio eos voluptatum asperiores nisi vel deleniti. Maxime est voluptas consequatur. Fuga quas est vero?</p>
+                    <p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Eaque dolorem officiis sapiente veritatis exercitationem dignissimos explicabo. Reiciendis odio eos voluptatum asperiores nisi vel deleniti. Maxime est voluptas consequatur. Fuga quas est vero?</p>
                     <p>Sint consectetur explicabo accusantium voluptas voluptatum quod, amet dignissimos repudiandae harum tenetur eveniet? Nisi, sed aperiam cupiditate nemo necessitatibus perspiciatis maiores id nesciunt suscipit et dolorem corrupti quas quo labore omnis quibusdam.</p>
                 </div><!-- col -->
 
@@ -162,13 +186,39 @@
                 </div>
                 <div class="col">
                     <h3>Curso 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis doloremque, quia rem rerum, optio quidem ad distinctio nesciunt maiores nemo pariatur obcaecati quasi vero voluptate minus cumque, maxime labore eos voluptas! Blanditiis.</p>
-                    <p>Odio, tenetur facilis totam explicabo sint necessitatibus, saepe aliquam aut aperiam ducimus sequi quidem exercitationem soluta fuga molestiae officia deleniti, quasi blanditiis? Corporis blanditiis sed fugiat deserunt inventore ea sunt quaerat at.</p>
+                    <ul>
+                        <li>Egipto</li>
+                        <li>Grecia</li>
+                        <li>Roma</li>
+                        <li>Fenicia</li>
+                    </ul>
+                    <p>Odio, tenetur facilis totam explicabo, aut aperiam ducimus sequi quidem exercitationem soluta fuga molestiae officia deleniti, quasi blanditiis?</p>
+                    <ol>
+                        <li>Inca</li>
+                        <li>Maya</li>
+                        <li>Azteca</li>
+                    </ol>
+                    <h4>Emperadores Romanos</h4>
+                    <ol type="I">
+                        <li>Agusto</li>
+                        <li>Claudio</li>
+                        <li>Constantino</li>
+                    </ol>
                 </div>
                 <div class="col">
                     <h3>Curso 3</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam necessitatibus veritatis quidem nemo animi inventore eaque saepe numquam, esse ducimus. Ut minus doloribus cumque aut dolores illo vero nobis eius perspiciatis nam!</p>
+                    <ol type="a">
+                        <li>Sodio</li>
+                        <li>Litio</li>
+                        <li>Hidrogeno</li>
+                        <li>Plata</li>
+                    </ol>
                     <p>Assumenda iure cumque nemo culpa. Laudantium officia, culpa suscipit cupiditate velit id corrupti quisquam at reiciendis optio nisi ex accusamus repellendus, necessitatibus, sed placeat blanditiis iste inventore? Corporis deleniti maxime culpa totam.</p>
+                    <ol start="12" type="i">
+                        <li>Huayna Cápac</li>
+                        <li>Huáscar</li>
+                        <li>Atahualpa</li>
+                    </ol>
                 </div>
             </div><!-- row -->
         </div><!-- container -->
