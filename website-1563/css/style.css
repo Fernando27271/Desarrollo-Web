@@ -15,6 +15,10 @@
     --gris-claro: #dddddd;
 }
 
+html{
+    scroll-behavior: smooth;/* para que los hipervínculos en la página sean con animación */
+}
+
 body{/* Así se define una regla de estilos para una etiqueta (en este caso body) */
     margin:0;/* Así se elimina el margen por defecto de body */
     background-color: var(--gris-claro); /* Color de fondo */
@@ -67,9 +71,28 @@ h3{
 #main-header{/* Así se define una regla para aplicar formato a un objeto
     por su id (empieza con #) */
     background-color: var(--color1);
+    position: sticky;/* para que el objeto se quede pegado
+    cuando llegue a la posición que se indica */
+    top: 0px;
+    z-index: 1000;/* Permite controlar el orden de profundidad de los objetos */
 }
 #main-header p{/* El espacio significa dentro de... */
     margin-bottom: 0;
+}
+#main-header .row{
+    justify-content: space-between;
+}
+#main-banner{
+    position: relative;
+}
+.main-banner-leyenda{
+    position: absolute;
+    bottom: -80px;
+    background-color: var(--color-blanco);
+    width: 40%;
+    left: 30%;
+    padding: 30px;
+    box-sizing: border-box;
 }
 #historia{
     background-color: var(--color3);
@@ -86,9 +109,27 @@ h3{
     color: var(--color-negro);
     text-decoration: none;
 }
+.imagen-leyenda{
+    position: relative;
+}
+.imagen-leyenda-contenido{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    width: calc(100% - 30px);
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    opacity: 0;/* Para que el objeto y su contenido estén totalmente transparentes */
+    transition: .5s all ease-in-out;
+}
+.imagen-leyenda-contenido:hover{
+    opacity: 1;
+}
+
 #mensaje{
-    background-color: var(--color-negro);
-    color: var(--gris-claro);
+    background-color: var(--color-blanco);
+    color: var(--gris-oscuro);
 }
 #concierto{
     background-image: url("../images/concierto.jpg");
@@ -129,6 +170,8 @@ h3{
     border: solid 2px var(--color-blanco);
     padding: 14px 10px;/* Arriba y abajo / Izquierda y Derecha */
     border-radius: 50%;
+    background-color: var(--color-blanco);
+    color: var(--color5);
 }
 #cursos{
     background-color: var(--color1);
@@ -149,6 +192,16 @@ h3{
     color: var(--gris-claro);
     padding-top: 45px;
     padding-bottom: 45px;
+}
+#ir-arriba{
+    font-size: 24px;
+    background-color: var(--color2);
+    color: var(--color-blanco);
+    padding: 20px 23px;
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    border-radius: 50%;
 }
 
 .padded{/* Así se define una regla para aplicar formato a una clase
@@ -225,4 +278,11 @@ h3{
 }
 .menu-main li a{
     padding: 25px 15px;
+    color: var(--color-negro);
+    border-bottom: solid 4px transparent;
+}
+.menu-main li a:hover{
+    color: var(--color-blanco);
+    text-decoration: none;
+    border-bottom: solid 4px var(--color-blanco);
 }
