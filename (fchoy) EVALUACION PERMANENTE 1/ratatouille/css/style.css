@@ -112,6 +112,10 @@ h3{
     font-size: 24px;
     margin-bottom: 33px;
 }
+h4{
+    font-size: 40px;
+    color: var(--color-7)
+}
 
 #navbar{
     display: flex;
@@ -252,6 +256,16 @@ h3{
     font-weight: 700;
     text-align: left;
 }
+#menu .col{
+    border: 5px Solid #afafaf48;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin: 20px 15px;
+    box-shadow: -9px 8px 17px -6px rgba(0, 0, 0, 0.151);
+}
+#menu .col ul{
+    padding: 0px;
+}
 #menu-logo{
     padding-top: 80px;
 }
@@ -285,6 +299,7 @@ h3{
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 150px;
+    margin-top: 50px;
 }
 #testimonios h2{
     text-align: left;
@@ -333,9 +348,26 @@ h3{
 #main-footer{
     background-color: var(--color-11);
     color: var(--color-7);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: left;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+#main-footer i{
+    background: #3B2E16;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 60px;
+    color: #ffffff;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#main-footer i:hover{
+    background-color: var(--color4);
 }
 #ir-arriba{
     background-color: #818181b0;
@@ -347,6 +379,24 @@ h3{
     right: 30px; 
 }
 
+.image-gallery{
+    position: relative;
+}
+.imagen-contenido{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    height:100%;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: .0s all ease;
+}
+.imagen-contenido:hover{
+    opacity: 1;
+    border-radius: 50%;
+    transition: .3s all ease-in-out;
+}
 .img-fluid{
     width: 100%;
     height: auto;
@@ -418,14 +468,8 @@ h3{
     max-width: 25%;
     padding: 0;
 }
-
 .col-figura img{
-    transition: .4s all ease-in-out;
-    margin-bottom: -4px;
-}
-
-.col-figura img:hover{
-    transform: scale(1.2,1.2);
+    border-radius: 50%;
 }
 .horario-atencion {
     display: inline-block;
