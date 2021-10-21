@@ -155,7 +155,19 @@ h3{
 #noticias{
     background-color: var(--color-blanco);
 }
+#noticias .col{
+    background-color: #eeeeee;
+    border: solid 1px #dddddd;padding-top: 15px;
+    margin: 5px;
+    border-radius: 0 0 15px 15px;
+    transition: all .5s ease-in-out;
+}
 
+#noticias .col:hover{
+    box-shadow: 0 10px 15px rgb(0 0 0 / 40%);
+    background-color: var(--color-blanco);
+    margin-top: -5px;
+}
 #eventos{
     background-color: var(--color2);
 }
