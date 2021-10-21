@@ -30,6 +30,9 @@ img{
     display: block;/* para eliminar el espacio por defecto que tienen las imagenes 
     en la parte inferior */
 }
+figure{
+    margin: 0;/* Elimina el margen por defecto de los objetos figure */
+}
 a{
     color: var(--color4);
     text-decoration: none;/* Elimina el subrayado por defecto del hipervínculo */
@@ -93,6 +96,7 @@ h3{
     left: 30%;
     padding: 30px;
     box-sizing: border-box;
+    box-shadow: 0px 15px 20px rgb(0 0 0 / 40%);
 }
 #historia{
     background-color: var(--color3);
@@ -111,17 +115,19 @@ h3{
 }
 .imagen-leyenda{
     position: relative;
+    top: -60px;
 }
 .imagen-leyenda-contenido{
     background-color: rgba(0,0,0,0.6);
     position: absolute;
     top: 0;
-    width: calc(100% - 30px);
-    height: 100%;
+    width: calc(100% - 90px);
+    height: calc(100% - 60px);
     padding: 40px;
     box-sizing: border-box;
     opacity: 0;/* Para que el objeto y su contenido estén totalmente transparentes */
     transition: .5s all ease-in-out;
+    margin: 30px;
 }
 .imagen-leyenda-contenido:hover{
     opacity: 1;
@@ -155,11 +161,11 @@ h3{
 }
 #eventos .col{
     background-color: var(--color-blanco);
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 15px;
     border: solid 1px #bbb;
-    
+    box-shadow: 10px 10px var(--color3);
 }
 #valores{
     background-color: var(--color5);
@@ -186,6 +192,7 @@ h3{
 }
 #colaboradores img{
     border-radius: 50%;
+    border: solid 10px var(--color5);
 }
 #main-footer{
     background-color: var(--gris-oscuro);
@@ -202,6 +209,13 @@ h3{
     right: 20px;
     bottom: 60px;
     border-radius: 50%;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 60%);
+    transition: all .5s ease-in-out;
+}
+
+#ir-arriba:hover{
+    bottom: 80px;
+    box-shadow: 0px 10px 15px rgb(0 0 0 / 40%);
 }
 
 .padded{/* Así se define una regla para aplicar formato a una clase
@@ -285,4 +299,14 @@ h3{
     color: var(--color-blanco);
     text-decoration: none;
     border-bottom: solid 4px var(--color-blanco);
+}
+.boton-vinculo{
+    border: solid 1px;
+    padding: 5px 15px;
+    border-radius: 17px;
+}
+.boton-vinculo:hover{
+    text-decoration: none;
+    background-color: var(--color4);
+    color: var(--color-blanco);
 }
