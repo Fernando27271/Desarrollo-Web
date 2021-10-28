@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideas Digitales - Bienvenidos</title>
+    <link rel="shortcut icon" href="images/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <!-- Con link se vincula la página html a la hoja de estilos -->
 </head>
@@ -12,12 +13,24 @@
 
     <nav id="top-nav">
         <div class="container">
-            <ul class="menu menu-top">
-                <li><a href="#">Oficinas</a></li>
-                <li><a href="#">Inversiones</a></li>
-                <li><a href="#">Asociados</a></li>
-                <li><a href="#">Contáctenos</a></li>
-            </ul>
+            <div class="row">
+                <ul class="menu menu-top">
+                    <li><a href="#">Oficinas</a></li>
+                    <li><a href="#">Inversiones</a></li>
+                    <li><a href="#">Asociados</a></li>
+                    <li><a href="#">Contáctenos</a></li>
+                </ul>
+                <ul class="menu menu-top">
+                    <li><a href="#"><i class="fas fa-envelope"></i> info@ideasdigitales.pe</a></li>
+                    <li><a href="#"><i class="fas fa-phone-alt"></i> (051)-956 654 633</a></li>
+                </ul>
+                <ul class="menu menu-top">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
         </div><!-- container -->
     </nav><!-- top-nav -->
 
@@ -25,9 +38,12 @@
     <header id="main-header">
         <div class="container">
             <div class="row">
-                <div id="logo">
+                <div id="logo" class="alineacion-vertical-centrado">
+                    <img src="images/logo.png" alt="" class="img-fluid">
+                    <!--
                     <h1>Ideas Digitales</h1>
                     <p>Novedades y Noticias de ciencica y tecnología</p>
+                    -->
                 </div>
                 <nav>
                     <ul class="menu menu-main">
@@ -199,14 +215,14 @@
             <h2>Cursos</h2>
             <div class="row">
                 <!-- (div.col>h3{Curso $}+(p>lorem32)*2)*3 -->
-                <div class="col col-50">
+                <article class="col col-50">
                     <h3>Curso 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ex aliquam totam, rem dolorum cupiditate illo ducimus quidem autem earum facilis nulla omnis dolorem quisquam tempore molestiae numquam architecto! Consequuntur, dolor facilis.</p>
                     <p>Nulla, neque dolores sunt in voluptas corrupti illo id illum mollitia ducimus perspiciatis voluptate praesentium, laborum sit dolor reprehenderit autem, earum sequi pariatur? Eius reiciendis facilis aut consequuntur corporis temporibus eveniet libero.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam soluta dignissimos neque quos id adipisci provident! Sunt temporibus minus quia, veniam molestias earum dolor distinctio eligendi pariatur nihil harum molestiae amet voluptates.</p>
                     <p>Labore quisquam non, optio molestiae dolores doloremque ab consectetur excepturi officia maiores voluptates. Ab odit voluptate dolore, rem amet quaerat est omnis dignissimos molestiae similique reiciendis fuga asperiores?</p>
-                </div>
-                <div class="col">
+                </article>
+                <article class="col">
                     <h3>Curso 2</h3>
                     <ul>
                         <li>Egipto</li>
@@ -226,8 +242,8 @@
                         <li>Claudio</li>
                         <li>Constantino</li>
                     </ol>
-                </div>
-                <div class="col">
+                </article>
+                <article class="col">
                     <h3>Curso 3</h3>
                     <ol type="a">
                         <li>Sodio</li>
@@ -241,7 +257,7 @@
                         <li>Huáscar</li>
                         <li>Atahualpa</li>
                     </ol>
-                </div>
+                </article>
             </div><!-- row -->
         </div><!-- container -->
     </section><!-- cursos -->
