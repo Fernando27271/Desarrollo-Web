@@ -101,6 +101,7 @@ h3{
 }
 #main-content{
     margin-top: -79px;
+    min-height: 600px;/* Alto mínimo */
 }
 #main-banner{
     position: relative;
@@ -197,6 +198,15 @@ h3{
     border: solid 1px #bbb;
     box-shadow: 10px 10px var(--color3);
 }
+#eventos .col figure{
+    overflow: hidden;/* Lo que se desborda se oculta */
+}
+#eventos .col img{
+    transition: .5s all ease-in-out;
+}
+#eventos .col img:hover{
+    transform: scale(1.3,1.3) rotate(-15deg);
+}
 #valores{
     background-color: var(--color5);
     color: var(--color-blanco);
@@ -217,12 +227,25 @@ h3{
     margin: 10px;
     border-radius: 10px
 }
+#videos{
+    background-color: var(--color-negro);
+    color: var(--color-blanco)
+}
 #colaboradores{
     text-align: center;
 }
 #colaboradores img{
     border-radius: 50%;
     border: solid 10px var(--color5);
+    filter: grayscale(1);
+    transition: all .5s ease-in-out;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#colaboradores img:hover{
+    filter: grayscale(0);
 }
 #main-footer{
     background-color: var(--gris-oscuro);
@@ -345,4 +368,40 @@ h3{
     text-decoration: none;
     background-color: var(--color4);
     color: var(--color-blanco);
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/****************************************************/
+#page-header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px var(--gris-oscuro);
+    outline: none;/* Elimina el border por defecto que se muestra cuando el objeto tiene el foco (cursor) */
+}
+.form-control:focus{/* es el estado cuando el objeto tiene el foco, es decir el cursor */
+    border-bottom-color: var(--color4);
+}
+.espacio-control{
+    margin-bottom: 10px;
 }
