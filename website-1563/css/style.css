@@ -114,6 +114,9 @@ h3{
     margin-top: -79px;
     min-height: 600px;/* Alto mínimo */
 }
+.sin-banner #main-content{
+    margin-top: 0;
+}
 #main-banner{
     position: relative;
 }
@@ -339,6 +342,11 @@ h3{
     flex-basis: 66.66%;
     max-width: 66.66%;
 }
+.col-75{
+    /* Para que la caja ocupe el 75% del objeto que lo contiene (su contenedor) */  
+    flex-basis: 75%;
+    max-width: 75%;
+}
 .img-fluid{
     width: 100%;/* Asi el ancho de la imagen es el ancho de su contenedor */
     height: auto;/* El alto será proporcional al ancho */
@@ -464,4 +472,69 @@ h3{
 #mapa-contactenos{
     margin-top: 90px;
     padding-bottom: 25%;
+}
+
+#sedes{
+    background-color: #ffffff;
+}
+.tabla-datos{
+    width: 100%;
+    background-color: var(--color3);
+    border-collapse: collapse;/* Elimina el espacio por defecto que tienen las celdas */
+}
+.tabla-datos thead tr th{
+    background-color: rgba(0,0,0,0.3);
+    color: var(--color-blanco);
+    text-align: left;
+}
+/*
+.tabla-datos tbody tr{
+    border-bottom: solid 1px var(--gris-oscuro);
+}
+*/
+.tabla-datos tfoot tr th{
+    text-align: left;
+}
+.tabla-datos th,
+.tabla-datos td{
+    padding: 8px;
+}
+.tabla-datos tr th:last-child,
+.tabla-datos tr td:last-child{
+    text-align: right;
+}
+.tabla-datos td{
+    border: solid 1px rgba(0,0,0,0.3);
+}
+.tabla-datos tr th:nth-child(3),
+.tabla-datos tr td:nth-child(3){
+    text-align: center;
+}
+.tabla-datos tbody tr:nth-child(odd){
+    /*
+    odd es impar
+    even es par
+    */
+    background-color: rgba(0,0,0,0.1);
+}
+.tabla-datos tbody tr:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+.tabla-datos tr td:first-child{
+    background-color: rgba(0,0,0,0.1);
+}
+.foto-destacada{
+    position: relative;
+    overflow: hidden;
+}
+.foto-destacada figcaption{
+    position: absolute;
+    top: 15%;
+    left: -33%;
+    background-color: var(--color4);
+    color: var(--color-blanco);
+    padding: 5px;
+    width: 100%;
+    transform: rotate(313deg);
+    text-align: center;
 }
