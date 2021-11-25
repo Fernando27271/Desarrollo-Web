@@ -321,6 +321,8 @@ h3{
     display: flex;/* Hace que los objetos que contiene, por defecto estén uno al costado del otro */
     margin-left: -15px;/* Truco para eliminar el padding adicional y esté alineado */
     margin-right: -15px;
+    flex-wrap: wrap;/* Si los objetos contenidos sobrepasan el ancho
+    los demas objetos pasan a la siguiente linea */
 }
 .col{
     padding-left: 15px;
@@ -537,4 +539,7 @@ h3{
     width: 100%;
     transform: rotate(313deg);
     text-align: center;
+}
+.pagina-iframe{
+    padding-bottom: 150%;
 }
