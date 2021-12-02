@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
+    <link rel="shortcut icon" href="images/icono.png" type="image/x-icon">
+    <title>Ratatouille</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header id="navbar">
+        <div class="alineacion-vertical-centrado logo-container">
+            <a href="index.html"><img id="logo" src="images/logo.png" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#about-us">Nosotros</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#cocineros">Equipo</a></li>
+            <li><a href="cocineros.html">Cocineros</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+        </ul>
+    </header><!-- navbar -->
+
+
+    <!-- BANNER SECONDARY -->
+    <section id="banner1" class="banner-secondary">
+        <div class="covertor">
+            <div class="title-banner" >Reservaciones</div>
+            <div id="slide-separator"></div>
+        </div>
+    </section><!-- banner secondary -->
+
+
+    <!-- RESERVACIONES -->
+    <section id="reservaciones" class="section">
+        <div class="container">
+            <h2 class="section-title">Reservaciones</h2>
+            <div class="section-subtitle">Hacer una reservación nunca fue tan fácil con las reservas de restaurantes<br>en línea gratuitas e instantáneas. ¡Reserva ahora!</div>
+            <div id="container-reservaciones">
+                <div class="reservaciones-logo"></div>
+                <div class="espacio1"></div>
+                <h6>
+                    <span>Bienvenido a Ratatouille</span>
+                </h6>
+                <h5>Haz una reservación</h5>
+                <h6>
+                    <span class="encima">Horas abiertas</span>
+                </h6>
+                <div class="espacio2"></div>
+                <p><strong>Lunes a Viernes</strong> 11:00 - 22:00 <strong>Sábados y Domingos</strong> 12:00 - 20:00</p>
+                <h3>+51-955-060-807</h3>
+            </div>
+            <form id="formulario-reservaciones">
+                <div class="row">
+                    <div class="col-formulario">
+                        <p>Reserva una mesa</p>
+                        <input type="date" name="fecha" required>
+                        <input type="time" name="horario" placeholder="Horario" required>
+                        <input type="number" name="cantidad" placeholder="Cantidad de personas" required>
+                    </div>
+                    <div class="col-formulario">
+                        <p>Detalles de contacto</p>
+                        <input type="text" name="reservation-name" placeholder="Nombre" required>
+                        <input type="email" name="reservation-mail" placeholder="Correo" required>
+                        <input type="text" name="reservation-phone" placeholder="Telefono" required>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="reservation-message" placeholder="Mensaje" rows="6"></textarea>
+                </div>
+                <div>
+                    <input type="submit" class="button-reservaciones" value="Hacer reservación" >
+                </div>
+            </form>
+        </div><!-- container -->
+    </section><!-- reservaciones -->
+
+
+    <!-- MAPA -->
+    <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7803.232272263715!2d-77.06433880404477!3d-12.069911203486434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9190cd685d5%3A0x3fc28708cf701edb!2sGranada%20360%2C%20Pueblo%20Libre%2015084!5e0!3m2!1ses!2spe!4v1632262442357!5m2!1ses!2spe" width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div><!-- map -->
+
+
+    <!-- MAIN FOOTER -->
+    <div id="main-footer">
+        <div class="container">
+            <div>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-facebook-f fa-2x" ></i>
+                <i class="fab fa-pinterest-p fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
+            </div>
+        </div><!-- container -->
+    </div><!-- main-footer -->
+
+
+    <a href="#" id="ir-arriba"><i class="fas fa-chevron-up"></i></a>
+
+
+    <!-- JAVASCRIPT CODE -->
+    <script>
+        window.addEventListener("scroll", function(){
+            let menuArea = document.getElementById('navbar');
+
+            if(window.pageYOffset > 450){
+                menuArea.classList.add("cus-nav")
+            }else{
+                menuArea.classList.remove("cus-nav")
+            }
+        });
+    </script>
+    <!-- JAVASCRIPT CODE -->
+</body>
+</html>

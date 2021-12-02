@@ -50,6 +50,40 @@ ul{
 a{
     text-decoration: none;
 }
+input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 7px;
+    border: 1px solid #cbc8c8;
+    color: #cbc8c8;
+    border-radius: 0px;
+}
+input:focus{
+    border-color: #C1A667;
+    box-shadow: 0 0 8px #c1a667;
+    outline: 0 none;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 7px;
+    border: 1px solid #cbc8c8;
+    color: #cbc8c8;
+    border-radius: 0px;
+}
+textarea:focus{
+    border-color: #C1A667;
+    box-shadow: 0 0 8px #c1a667;
+    outline: 0 none;
+}
 p {
     margin-top: 0;
     margin-bottom: 25px;
@@ -108,6 +142,28 @@ h4{
     font-size: 48px;
     color: var(--color-7)
 }
+h5{
+    text-transform: uppercase;
+    color: #4d4c4a;
+    font-family: "Montserrat",sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 16px 0px;
+}
+h6{
+    line-height: 0.5;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-size: 20px;
+    color: #c02530;
+    text-align: center;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
 
 #logo{
     margin: 0;
@@ -136,7 +192,7 @@ h4{
 #navbar ul li a{
     line-height: 80px;
     color: var(--color-7);
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -162,8 +218,29 @@ h4{
     transition: 0.2s all ease-in-out;
     border-bottom: solid 3px var(--color5);
 }
+#navbar.cus-nav .logo-container a{
+    border-bottom: 0px ;
+}
+#navbar.cus-nav .logo-container a:hover{
+    border-bottom:  0px ;
+}
 #main-banner{
     position: relative;
+}
+#banner1{
+    position: relative;
+    background-image: url('../images/banner-secondary1.jpg');
+    background-position: 80%;
+    height: 700px;
+}
+#banner2{
+    position: relative;
+    background-image: url('../images/banner-secondary2.jpg');
+    background-position: 80%;
+    height: 700px;
+}
+.banner-secondary .covertor{
+    background-color: #00000025;
 }
 #logo-banner{
     display: block;
@@ -185,6 +262,16 @@ h4{
     text-align: center;
     color: var(--color-7);
     font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+.title-banner{
+    font-family: 'Oswald', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    color: var(--color-7);
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-top: 20px;
@@ -321,6 +408,46 @@ h4{
 #galeria .container{
     margin-bottom: 100px;
 }
+#cocineros-page{
+    background: #DAD299;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#cocineros-page h2{
+    color: var(--color-9);
+    font-weight: 600;
+    font-size: 2.4em;
+}
+table{
+    width: 100%;
+	border-collapse: collapse;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+th, td{
+    padding: 35px 35px;
+	background-color: rgba(255, 255, 255, 0.747);
+	color: #000;
+	text-align: left;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+td{
+    font-weight: 500;
+}
+thead th {
+	background-color: #B0DAB9;
+}
+tbody tr{
+    transition: 0.4s all ease-in-out;
+}
+tbody tr:hover{
+	background-color: rgba(255, 255, 255, 0.904);
+    transform: scale(1.035);
+    transition: 0.4s all ease-in-out;
+}
 #cocineros{
     background-color: var(--color-11);
 }
@@ -345,6 +472,82 @@ h4{
 }
 #video .container{
     margin-bottom: 100px;
+}
+#reservaciones h6 span{
+    display: inline-block;
+    position: relative;
+}
+#reservaciones h6 span:before{
+    width: 190px;
+    right: 100%;
+    margin-right: 10px;
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #6DBA7E;
+    top: 2px;
+}
+#reservaciones h6 span:after{
+    width: 190px;
+    left: 100%;
+    margin-left: 10px;
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #6DBA7E;
+    top: 2px;
+}
+#reservaciones h6 span.encima:before{
+    width: 235px;
+    right: 100%;
+    margin-right: 10px;
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #6DBA7E;
+    top: 2px;
+}
+#reservaciones h6 span.encima:after{
+    width: 235px;
+    left: 100%;
+    margin-left: 10px;
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #6DBA7E;
+    top: 2px;
+}
+#reservaciones p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #7d7a7a;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0px;
+}
+#reservaciones h3{
+    font-family: "Oswald";
+    font-weight: 400;
+    color: #309f52;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 16px 0px;
+}
+#formulario-reservaciones p{
+    text-align: left;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: #dd0301;
+    font-size: 1.4em;
+    margin: 20px 0px;
+}
+#formulario-reservaciones{
+    max-width: 1025px;
+    padding-top: 0px;
+    margin: 0px auto;
+    padding-left: 34px;
+    padding-right: 34px;
 }
 #main-footer{
     background-color: var(--color-11);
@@ -501,6 +704,15 @@ h4{
     filter: none;
     transform: rotate(0deg);
 }
+.col-formulario{
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+}
 .horario-atencion {
     display: inline-block;
     vertical-align: top;
@@ -563,4 +775,38 @@ h4{
     left: 0;
     width: 100%;
     height: 100%;
+}
+.reservaciones-logo{
+    width: 75px;
+    height: 76px;
+    background: url('../images/reservations-logo.png');
+    margin: 0 auto;
+    content: " ";
+    margin-top: -20px;
+}
+.espacio1{
+    margin-top: 40px;
+}
+.espacio2{
+    margin-top: 60px;
+}
+.button-reservaciones{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    color: #309f52;
+    border: 3px solid #309f52;
+    padding: 15px 10px;
+    margin-top: 30px;
+    background: transparent;
+    transition: 0.5s all ease;
+    height: 70px;
+    width: 340px;
+    margin-bottom: 130px;
+}
+.button-reservaciones:hover{
+    background: #309f52;
+    color: #ffffff;
 }

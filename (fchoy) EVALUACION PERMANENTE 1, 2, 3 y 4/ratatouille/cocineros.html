@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
+    <link rel="shortcut icon" href="images/icono.png" type="image/x-icon">
+    <title>Ratatouille</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header id="navbar">
+        <div class="alineacion-vertical-centrado logo-container">
+            <a href="index.html"><img id="logo" src="images/logo.png" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#about-us">Nosotros</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#cocineros">Equipo</a></li>
+            <li><a href="cocineros.html">Cocineros</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+        </ul>
+    </header><!-- navbar -->
+
+
+    <!-- BANNER SECONDARY -->
+    <section id="banner2" class="banner-secondary">
+        <div class="covertor">
+            <div class="title-banner" >cocineros</div>
+            <div id="slide-separator"></div>
+        </div>
+    </section><!-- banner secondary -->
+
+    <!-- COCINEROS -->
+    <section id="cocineros-page" class="section">
+        <div class="container">
+            <div class="container-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cod</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Especialidad</th>
+                            <th>Escuela</th>
+                            <th>Nivel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Gastón Álvaro</td>
+                            <td>Acurio Jaramillo</td>
+                            <td>Comida Criolla</td>
+                            <td>Le Cordon Bleu</td>
+                            <td>5 tenedores</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Sandra Pierantoni</td>
+                            <td>Grellaud de Plevisani</td>
+                            <td>Repostería</td>
+                            <td>D'Galia</td>
+                            <td>4 tenedores</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>David </td>
+                            <td>Muñoz Rosillo</td>
+                            <td>Cocina Internacional</td>
+                            <td>Basque Culinary Center</td>
+                            <td>3 tenedores</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>María Pía</td>
+                            <td>León Martinez</td>
+                            <td>Ensaladas</td>
+                            <td>Academia Barilla</td>
+                            <td>5 tenedores</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>Massimo </td>
+                            <td>Bottura Gilmore</td>
+                            <td>Comida Italiana</td>
+                            <td>Le Cordon Bleu</td>
+                            <td>2 tenedores</td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>Jordi Josep</td>
+                            <td>Fontané Roca</td>
+                            <td>Comida Dietética</td>
+                            <td>French Culinary Institute</td>
+                            <td>4 tenedores</td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td>Virgilio</td>
+                            <td>Martínez Véliz</td>
+                            <td>Artes Culinarias</td>
+                            <td>Tante Marie</td>
+                            <td>3 tenedores</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><!-- container -->
+    </section><!-- cocineros -->
+
+
+    <!-- MAIN FOOTER -->
+    <div id="main-footer">
+        <div class="container">
+            <div>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-facebook-f fa-2x" ></i>
+                <i class="fab fa-pinterest-p fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
+            </div>
+        </div><!-- container -->
+    </div><!-- main-footer -->
+
+
+    <a href="#" id="ir-arriba"><i class="fas fa-chevron-up"></i></a>
+
+
+    <!-- JAVASCRIPT CODE -->
+    <script>
+        window.addEventListener("scroll", function(){
+            let menuArea = document.getElementById('navbar');
+
+            if(window.pageYOffset > 450){
+                menuArea.classList.add("cus-nav")
+            }else{
+                menuArea.classList.remove("cus-nav")
+            }
+        });
+    </script>
+    <!-- JAVASCRIPT CODE -->
+</body>
+</html>
