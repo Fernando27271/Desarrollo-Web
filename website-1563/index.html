@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <!-- Con link se vincula la página html a la hoja de estilos -->
 </head>
 <body>
@@ -68,6 +69,9 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, quaerat. Qui impedit quia amet vel tempore fugit error temporibus quaerat, minima fugiat quae ut. Repudiandae cumque officia voluptatum ratione expedita a dolorem.</p>
             <a href="#" class="boton-vinculo">Más información</a>
         </figcaption>
+        <figure id="sub-imagen">
+            <img src="images/imagen-animada.jpg" class="img-fluid" alt="">
+        </figure>
     </figure><!-- main-banner -->
 
     <section id="historia" class="padded">
@@ -159,28 +163,36 @@
                 <!-- (div.col>h3{Evento $}+p>lorem30)*4 -->
                 <article class="col">
                     <figure>
-                        <img src="images/evento1.jpg" alt="" class="img-fluid">
+                        <a href="images/evento1.jpg" data-fancybox="gallery" data-caption="Jennifer Lopez">
+                            <img src="images/evento1.jpg" alt="" class="img-fluid">
+                        </a>
                     </figure>
                     <h3>Evento 1</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptatum cum aliquid architecto hic quod inventore porro odio modi quia nisi dolorem aliquam facere soluta quisquam perferendis repellat, tempora numquam.</p>
                 </article><!-- col -->
                 <article class="col">
                     <figure>
-                        <img src="images/evento2.jpg" alt="" class="img-fluid">
+                        <a href="images/evento2.jpg" data-fancybox="gallery" data-caption="Rihanna">
+                            <img src="images/evento2.jpg" alt="" class="img-fluid">
+                        </a>
                     </figure>
                     <h3>Evento 2</h3>
                     <p>Minus veniam quod qui modi a sint hic minima aspernatur omnis magnam officia dolore, libero quae pariatur earum nostrum porro laborum facere, autem nemo iste, asperiores ab aperiam placeat? Aut.</p>
                 </article><!-- col -->
                 <article class="col">
                     <figure>
-                        <img src="images/evento3.jpg" alt="" class="img-fluid">
+                        <a href="images/evento3.jpg" data-fancybox="gallery" data-caption="Justin Bieber">
+                            <img src="images/evento3.jpg" alt="" class="img-fluid">
+                        </a>
                     </figure>
                     <h3>Evento 3</h3>
                     <p>Eum enim nihil non accusantium vitae recusandae consectetur numquam quos ratione at nesciunt iusto illo corrupti, nisi cupiditate dolorum! Adipisci quia quo quae beatae atque voluptatem laboriosam provident facilis neque.</p>
                 </article><!-- col -->
                 <article class="col">
                     <figure>
-                        <img src="images/evento4.jpg" alt="" class="img-fluid">
+                        <a href="images/evento4.jpg" data-fancybox="gallery" data-caption="Spice Girls">
+                            <img src="images/evento4.jpg" alt="" class="img-fluid">
+                        </a>
                     </figure>
                     <h3>Evento 4</h3>
                     <p>Repellendus eligendi hic, cumque ullam laboriosam odio eveniet consequatur illo atque neque recusandae quo vel perspiciatis molestiae qui et soluta? Architecto laboriosam pariatur molestias cum tempora. Maxime, nulla! Minus, impedit.</p>
@@ -333,6 +345,6 @@
     </footer><!-- main-footer -->
 
     <a href="#" id="ir-arriba"><i class="fas fa-chevron-up"></i></a>
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
