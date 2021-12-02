@@ -444,7 +444,7 @@ tbody tr{
     transition: 0.4s all ease-in-out;
 }
 tbody tr:hover{
-	background-color: rgba(255, 255, 255, 0.904);
+	background-color: rgb(255, 255, 255);
     transform: scale(1.035);
     transition: 0.4s all ease-in-out;
 }
