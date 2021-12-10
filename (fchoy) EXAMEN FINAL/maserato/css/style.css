@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --color-blanco: #ffffff;
+    --gris-claro: #f2f1f0;
+    --gris-oscuro: #333333;
+    --azul-marino: #0c2340;
+    --color-negro: #000000;
+    --fuente-principal: 'Saira Condensed', sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--fuente-principal);
+    margin: 0;
+    background-color: var(--gris-claro);
+}
+img{
+    display: block;
+}
+figure{
+    margin: 0;
+}
+a{
+    text-decoration: none;  
+}
+ul{
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+iframe{
+    display: block;
+}
+
+h1{
+    color: var(--color-blanco);
+    font-size: 76px;
+    font-weight: 300;
+    position: relative;
+    letter-spacing: -2px;
+    margin: 0px;
+    bottom: -22px;
+}
+h1:after{
+    content: "";
+    width: 1px;
+    height: 166px;
+    background-color: hsla(0,0%,100%,.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 28px;
+}
+h2{
+    font-size: 62px;
+    font-weight: 300;
+    color: var(--color-negro);
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 26px 0px;
+}
+h3{
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+}
+h4{
+    font-size: 52px;
+    color: var(--color-blanco);
+    font-weight: 300;
+    margin-left: 30px;
+    margin-bottom: -35px;
+    letter-spacing: -2px;
+    line-height: 60px;
+}
+h5{
+    font-size: 28px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+h6{
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    padding-top: 18px;
+    padding-bottom: 38px;
+}
+
+#navbar{
+    background-color: var(--color-blanco);
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+}
+#navbar .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar i{
+    color: #000000b2;
+}
+#menu{
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    display: flex;
+    margin-left: 60px;
+}
+#menu li a{
+    display: block;
+    padding: 36px 25px 36px 16px;
+    color: var(--azul-marino);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 23px;
+    border-bottom: solid 2.5px transparent;
+}
+#menu li a:hover{
+    text-decoration: none;
+    border-bottom: solid 2.5px var(--azul-marino);
+}
+#menu i{
+    color: var(--gris-oscuro);
+}
+#logo{
+    width: 155px;
+}
+#banner{
+    position: relative;
+}
+#banner .text-left-group{
+    display: flex;
+    align-items: flex-end;
+}
+#banner .row{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#subtitle-banner{
+    color: var(--color-blanco);
+    font-size: 32px;
+    font-weight: 300;
+    margin-left: 60px;
+    letter-spacing: 1px;
+}
+#subtitle-store{
+    color: var(--color-blanco);
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+#back-boton-banner{
+    background-color: var(--color-blanco);
+    padding: 10px 34px;
+    border-radius: 4px;
+}
+#back-boton-banner a{
+    color: var(--gris-oscuro);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+#back-boton-store{
+    background-color: var(--color-blanco);
+    width: 161px;
+    padding: 5px 36px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+#back-boton-store a{
+    color: var(--gris-oscuro);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+#modelos h2{
+    font-size: 64px;
+    font-weight: 300;
+    color: var(--gris-oscuro);
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 30px 0px;
+}
+#autos{
+    background-color: var(--color-blanco);
+}
+#models{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+#mundo-maserato{
+    background-color: var(--color-blanco);
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+#maserato-store{
+    position: relative;
+    overflow: hidden;
+}
+#maserato-store h2{
+    font-size: 64px;
+    font-weight: 300;
+    color: var(--color-blanco);
+    letter-spacing: -2px;
+    margin: 0;
+    padding-top: 52px;
+    padding-bottom: 0;
+}
+#video{
+    background-color: var(--color-blanco);
+    padding-bottom: 80px;
+}
+#video h2{
+    margin-left: 10%;
+    padding-top: 70px;
+    color: var(--color-negro);
+    font-size: 72;
+    letter-spacing: 1px;
+}
+#container-video{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#ir-arriba{
+    position: absolute;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background: transparent url('../images/up.svg') no-repeat 50% 50%;
+    background-size: 100%;
+    background-color: var(--color-blanco);
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    z-index: 201;
+}
+#footer{
+    background-color: var(--gris-oscuro);
+    color: var(--color-blanco);
+}
+#footer li{
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+#footer .container{
+    padding-top: 60px;
+}
+#footer i{
+    margin: 5px;
+}
+#facebook{
+    color: var(--color-blanco);
+}
+#facebook:hover{
+    color: rgb(59, 89, 152);
+}
+#twitter{
+    color: var(--color-blanco);
+}
+#twitter:hover{
+    color: rgb(0, 172, 237);
+}
+#youtube{
+    color: var(--color-blanco);
+}
+#youtube:hover{
+    color: rgb(205, 32, 31);
+}
+#instagram{
+    color: var(--color-blanco);
+}
+#instagram:hover{
+    color: #C13584;
+}
+#pinterest{
+    color: var(--color-blanco);
+}
+#pinterest:hover{
+    color: rgb(203, 32, 39);
+}
+#linkedin{
+    color: var(--color-blanco);
+}
+#linkedin:hover{
+    color: rgb(0, 119, 181);
+}
+#line-footer{
+    height: .5px;
+    background-color: var(--color-blanco);
+    margin-left: 33%;
+    margin-right: 33%;
+}
+#line-left-footer{
+    position: relative;
+}
+#line-left-footer:before{
+    position: absolute;
+    left: 0px;
+    top: 55%;
+    content: "";
+    display: block;
+    width: .5px;
+    height: 110%;
+    transform: translateY(-50%);
+    background-color: hsla(0,0%,100%,.5);
+}
+#line-left-footer .row{
+    justify-content: space-between;
+}
+#container-logo-footer{
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+    padding: 12px 0px;
+}
+#peru-group{
+    display: flex;
+    margin-left: 85px;
+    flex-direction: row;
+    align-items: center;
+}
+#ir-arriba:active{
+    background: transparent url('../images/up-h.svg') no-repeat 50% 50%;
+    background-size: 100%;
+    background-color: var(--azul-marino);
+}
+
+.container{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.container-navbaner{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.row{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+}
+.row-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+.col-39{
+    flex-basis: 39%;
+    max-width: 39%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.col-38{
+    flex-basis: 38%;
+    max-width: 38%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.col{
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+.centered-vertical-alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.covertor{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.646385621488764) 44%);
+    padding-bottom: 68px;
+}
+.covertor-2{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.296) 34%, rgba(0, 0, 0, 0.426) 84%);
+    width: 1120px;
+}
+.text-left-group{
+    display: flex;
+    align-items: center;
+}
+.model{
+    padding: 45px 55px;
+    background-color: #fff;
+    flex-basis: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.model-ex{
+    padding: 45px 55px;
+    background-color: #fff;
+    flex-basis: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.model:after{
+    position: absolute;
+    right: 0.5px;
+    top: 50%;
+    content: "";
+    display: block;
+    width: 1.5px;
+    height: 80%;
+    transform: translateY(-50%);
+    background: linear-gradient(transparent,#ebebeb,transparent);
+}
+.arriba{
+    height: 90px;
+    margin-bottom: 6px;
+}
+.medio{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    height: 46px;
+    margin-bottom: 6px;
+}
+.abajo{
+    font-size: 18px;
+    font-weight: 300;
+    height: 66px;
+    margin-bottom: 6px;
+}
+.car img{
+    margin: 30px 0px;
+}
+.botones-cars{
+    display: inline-block;
+}
+.back-boton-car{
+    border: 1px solid var(--gris-oscuro);
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.back-boton-car a{
+    color: var(--color-negro);
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.back-boton2-car{
+    background-color: var(--azul-marino);
+    border: 1px solid var(--azul-marino);
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.back-boton2-car a{
+    color: var(--color-blanco);
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.fotos{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 24px rgb(0 0 0 / 16%);
+}
+.fotos img{
+    transition: .5s all ease-in-out;
+}
+.fotos img:hover{
+    transform: scale(1.2);
+}
+.peru{
+    margin-left: 25px;
+    font-size: 24px;
+}
+.change{
+    margin-right: 15px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.footer-txt{
+    margin-left: 65px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 35px;
+}
+.back-boton-footer{
+    border: 1px solid var(--color-blanco);
+    padding: 8px 33px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 65px;
+}
+.back-boton-footer a{
+    color: var(--color-blanco);
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
